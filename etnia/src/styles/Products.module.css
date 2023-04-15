@@ -1,0 +1,30 @@
+.main2 {
+    background-image: url('https://res.cloudinary.com/df4snwy5t/image/upload/v1681342840/proyector-escaparate-producto-sobre-fondo-degradado-negro_1_ba68hd.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+    width: 1440px;
+    height: 700px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.productsContainer__products {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   padding: 20px;
+   padding-top: 80px;
+   justify-content: center;
+   gap: 15px;
+   width: 90%;
+   height: 50%;
+   margin: auto;
+}
+
+.productsContainer {
+    color: white;
+    text-align: center;
+}

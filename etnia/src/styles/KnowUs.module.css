@@ -1,0 +1,38 @@
+.main1 {
+    background-image: url('https://res.cloudinary.com/df4snwy5t/image/upload/v1681330526/desenfoque-lujo-abstracto-degradado-gris-oscuro-negro-utilizado-como-pared-estudio-fondo-exhibir-sus-productos_1_wdns6h.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+    width: 1440px;
+    height: 700px;
+    display: flex;
+    align-content: center;
+    
+}
+
+.knowUSContainer {
+    display: flex;
+    flex-wrap: row;
+    align-items: center;
+    gap: 150px;
+    padding: 20px;
+    padding-left: 100px;
+  }
+
+  .knowUSContainer__logo__h1 {
+    color: white;
+    margin: auto;
+  }
+
+  .knowUSContainer__text {
+    
+    padding: 50px;
+    
+  }
+
+  .knowUSContainer__text__p1 {
+    color: white;
+    margin: auto;
+    font-size: 22px;
+  }
+
