@@ -2,17 +2,8 @@ import Head from "next/head";
 import { Prompt } from "next/font/google";
 import styles from "@/styles/Footer.module.css";
 import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import Link from "next/link";
-
-// if (typeof window !== "undefined") {
-//   import("react-leaflet").then(
-//     ({ default: { MapContainer, TileLayer, Marker, Popup } }) => MapContainer
-//   );
-// }
-
-// const windowDOM = typeof window !== “undefined” ? window : undefined
 
 const prompt = Prompt({
   subsets: ["latin"],
@@ -49,24 +40,7 @@ function Footer() {
               </p>
             </div>
           </div>
-          <div className={styles.footerContainer__map}>
-            <MapContainer
-              className={styles.map}
-              center={[51.505, -0.09]}
-              zoom={13}
-              scrollWheelZoom={false}
-            >
-              <TileLayer
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              />
-              <Marker position={[51.505, -0.09]}>
-                <Popup>
-                  A pretty CSS3 popup. <br /> Easily customizable.
-                </Popup>
-              </Marker>
-            </MapContainer>
-          </div>
+          <div className={styles.footerContainer__map}></div>
         </div>
       </main>
     </>
