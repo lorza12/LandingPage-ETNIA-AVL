@@ -1,5 +1,5 @@
 .bannerContainer {
-  background-color: rgb(36, 35, 35);
+  background-color: rgb(25, 24, 24);
   text-align: center;
 }
 
@@ -34,13 +34,23 @@
   font-size: 12px;
  }
 
+ .redes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  top: 40%;
+  left: 1.5%;
+  opacity: 0.5;
+ }
+
  .bannerContainer__banner {
   display: flex;
  }
  
 .bannerContainer__banner__mySwiper {
   width: 80%;
-  padding-top: 20px;
+  padding-top: 45px;
   padding-bottom: 50px;
   
 }
@@ -48,7 +58,7 @@
 
 .bannerContainer__banner__SwiperSlide {
   /* text-align: center; */
-  background: rgb(36, 35, 35);
+  background: rgb(25, 24, 24);
   background-position: center;
   background-size: cover;
   width: 100%;

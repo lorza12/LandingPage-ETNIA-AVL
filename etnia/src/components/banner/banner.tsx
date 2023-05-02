@@ -13,9 +13,7 @@ import img3 from "./assets/20221120_164211.jpg";
 import img4 from "./assets/20221120_164047.jpg";
 import img5 from "./assets/20221120_164212.jpg";
 import img6 from "./assets/20221120_164100.jpg";
-// import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
-// import "swiper/swiper-bundle.min.css";
-// import "swiper/swiper.min.css";
+import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
@@ -28,8 +26,13 @@ function Banner() {
     <>
       <div className={styles.bannerContainer}>
         <div className={styles.bannerContainer__banner}>
-          <div>
-            <h1>hola</h1>
+          <div className={styles.margen}>
+            <div className={styles.redes}>
+              <BsFacebook />
+              <BsTwitter />
+              <BsInstagram />
+            </div>
+
             <div className={styles.vLine1}></div>
             <br />
             <p className={styles.p}>ETNIA</p>
@@ -46,7 +49,7 @@ function Banner() {
             pagination={{ clickable: true }}
             effect="coverflow"
             coverflowEffect={{
-              rotate: 50,
+              rotate: 30,
               stretch: 0,
               depth: 100,
               modifier: 1,
