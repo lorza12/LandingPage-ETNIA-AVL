@@ -40,6 +40,9 @@ function KnowUs() {
                 experiencias <b className={styles.b}> únicas</b> y
                 <b className={styles.b}> memorables</b>.
               </p>
+              <button type="button" className={styles.knowUSContainer__button}>
+                Conocer mas{" "}
+              </button>
             </div>
           </div>
         </div>
