@@ -1,6 +1,13 @@
 import Head from "next/head";
+import { Prompt } from "next/font/google";
 import styles from "@/styles/Products.module.css";
 import Image from "next/image";
+import Link from "next/link";
+
+const prompt = Prompt({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 function Products() {
   return (
@@ -14,7 +21,10 @@ function Products() {
       <main className={styles.main2}>
         <div className={styles.productsContainer}>
           <div className={styles.productsContainer__title}>
-            <h1>Nuestros productos</h1>
+            <div className={prompt.className}>
+              <h1>Nuestros productos</h1>
+              <Link href={`/products`}>Ver productos</Link>
+            </div>
           </div>
           <div className={styles.productsContainer__products}>
             <div className={styles.productsContainer__product1}>
